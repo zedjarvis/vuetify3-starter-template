@@ -3,6 +3,7 @@ import { URL, fileURLToPath } from 'node:url'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import Components from 'unplugin-vue-components/vite'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -19,6 +20,10 @@ export default defineConfig({
       autoImport: true,
       styles: { configFile: 'src/styles/vuetify/_variables.scss'}
     }),
+    Components({
+      dirs: ['src/components'],
+      dts:true
+    })
   ],
   define: { 'process.env': {} },
   resolve: {
