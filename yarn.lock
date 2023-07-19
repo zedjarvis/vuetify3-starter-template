@@ -3723,6 +3723,13 @@ vite-plugin-pages@^0.31.0:
     picocolors "^1.0.0"
     yaml "^2.3.1"
 
+vite-plugin-vue-meta-layouts@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vue-meta-layouts/-/vite-plugin-vue-meta-layouts-0.2.2.tgz#b78a3b3a68c8456971e8cfe0536d0da1b076786d"
+  integrity sha512-u3WHlSzqE7tfOFFN7IygkQXDgnhVYD+GSfSXeMk1m/xI/gMtJtLeVwjBTow4kOn3oEkJcj/I9yCZoWpQeRHTFw==
+  dependencies:
+    local-pkg "^0.4.3"
+
 vite-plugin-vuetify@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/vite-plugin-vuetify/-/vite-plugin-vuetify-1.0.2.tgz#d1777c63aa1b3a308756461b3d0299fd101ee8f4"
