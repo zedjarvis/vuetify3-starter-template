@@ -4,6 +4,8 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import Components from 'unplugin-vue-components/vite'
+import Pages from 'vite-plugin-pages'
+import MetaLayouts from 'vite-plugin-vue-meta-layouts'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -23,7 +25,9 @@ export default defineConfig({
     Components({
       dirs: ['src/components'],
       dts:true
-    })
+    }),
+    Pages({}),
+    MetaLayouts({}),
   ],
   define: { 'process.env': {} },
   resolve: {
