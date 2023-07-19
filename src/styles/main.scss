@@ -1,0 +1,32 @@
+@use "sass:map";
+@use "libs/vuetify/variables";
+
+@mixin elevation($z, $important: false) {
+    box-shadow: map.get(variables.$shadow-key-umbra, $z), map.get(variables.$shadow-key-penumbra, $z), map.get(variables.$shadow-key-ambient, $z) if($important, !important, null);
+}
+
+// 👉 Avatar group
+.v-avatar-group {
+    display: flex;
+    align-items: center;
+  
+    > * {
+      &:not(:first-child) {
+        margin-inline-start: -0.8rem;
+      }
+  
+      transition: transform 0.25s ease, box-shadow 0.15s ease;
+  
+      &:hover {
+        z-index: 2;
+        transform: translateY(-5px) scale(1.05);
+  
+        @include elevation(3);
+      }
+    }
+  
+    > .v-avatar {
+      border: 2px solid rgb(var(--v-theme-surface));
+      transition: transform 0.15s ease;
+    }
+  }

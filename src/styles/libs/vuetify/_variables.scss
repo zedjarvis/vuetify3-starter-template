@@ -1,0 +1,69 @@
+/* stylelint-disable max-line-length */
+$font-family-inter: "Inter", sans-serif;
+$font-family-grotesk: "Space Grotesk", sans-serif;
+
+/* stylelint-enable max-line-length */
+@forward "vuetify/settings" with (
+  $color-pack: false !default,
+
+  // 👉 font-family
+  $body-font-family: $font-family-inter !default,
+
+  // 👉 border-radius
+  $border-radius-root: 6px !default,
+
+  // 👉 Typography
+  $typography: (
+    "h1": (
+      "weight": 500,
+      "line-height": 7rem,
+      "letter-spacing": -0.0938rem,
+    ),
+    "h2": (
+      "weight": 500,
+      "line-height": 4.5rem,
+      "letter-spacing": -0.0313rem,
+    ),
+    "h3": (
+      "weight": 500,
+      "line-height": 3.5rem,
+    ),
+    "h4": (
+      "weight": 500,
+      "letter-spacing": 0.0156rem,
+    ),
+    "h5": (
+      "weight": 500,
+    ),
+    "h6": (
+      "letter-spacing": 0.0094rem,
+    ),
+    "subtitle-1": (
+      "letter-spacing": 0.0094rem,
+    ),
+    "subtitle-2": (
+      "line-height": 1.3125rem,
+      "letter-spacing": 0.0063rem,
+    ),
+    "body-1": (
+      "letter-spacing": 0.0094rem,
+    ),
+    "body-2": (
+      "line-height": 1.3125rem,
+      "letter-spacing": 0.0094rem,
+    ),
+    "caption": (
+      "line-height": 0.875rem,
+      "letter-spacing": 0.025rem,
+    ),
+    "button": (
+      "line-height": 1.5rem,
+      "letter-spacing": 0.025rem,
+    ),
+    "overline": (
+      "weight": 400,
+      "line-height": 0.875rem,
+      "letter-spacing": 0.0625rem,
+    ),
+  ) !default,
+);
